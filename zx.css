@@ -1,0 +1,84 @@
+:root{
+    font-size: 12px;
+}
+.parent{
+    display: flex;
+    height:200px;
+    flex-wrap: wrap;
+    align-content: space-between;
+    flex-direction: row;
+}
+h1 span {
+        display: block;
+    }
+    .heading{
+        background-color: #FAEBD7;
+        border-color: green;       
+    }
+    h1 span.major {
+        font-size:2rem;
+        font-weight: bold;
+    }
+    .sub-heading{
+        background-color: red;
+        font: 2rem arial, sans-serif;
+
+    }
+    #subchild{
+    background: yellow;
+    display:flex;
+    flex-direction: row;
+    align-items: center;}
+    #subchild1 {
+    background: #cccccc;
+    display:flex;
+    flex-direction: row;
+    align-items: flex-start;
+    /*background-image:url("Myhobbies.jpg");
+    background-repeat: no-repeat*/
+}
+
+    h1 span.major1 {
+        font-size: 2rem;
+        font-style: bold;
+        margin: 30px 50px 75px 100px;
+    }   
+     h1 span.major2 {
+        font-size: 2rem;
+        font-style: italic;
+        margin: 25px 50px 75px 100px;
+    }
+     ul.my-list-style {
+    list-style-type:none;
+    color: #0000FF;
+    font:normal bold 12px/30px Georgia, serif;
+    /*background-color: rgb(201, 76, 76);*/
+    padding: 10px 20px;
+  
+}.my-image {    
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    height: 12vh;
+    padding: 5px;
+    width: 12vw;
+    justify-content: flex-end;
+}
+
+img.my-image:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+@media screen and  (max-width: 725px) {
+    .parent {
+        flex-direction: column;
+    }
+    .parent .image {
+        order: -1;
+        /*justify-content: space-around;*/
+    }
+    .parent .my-image {
+
+        width: 60vw;
+    }
+}
+
+
